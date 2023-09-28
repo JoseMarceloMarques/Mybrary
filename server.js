@@ -12,6 +12,7 @@ if (process.env.NODE_ENV !== 'production') {
 // Include the routes
   const indexRouter = require('./routes/index')
   const authorRouter = require('./routes/authors')
+  const bookRouter = require('./routes/books')
   
 // Set options
   app.set('view engine', 'ejs')
@@ -31,6 +32,7 @@ if (process.env.NODE_ENV !== 'production') {
 // Set the routes
   app.use('/', indexRouter)
   app.use('/authors', authorRouter)
+  app.use('/books', bookRouter)
   
 // Set the port
   app.listen(process.env.PORT || 3000)

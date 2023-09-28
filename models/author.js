@@ -1,3 +1,4 @@
+// Creates the Author object
 const mongoose = require('mongoose')
 
 const authorSchema = new mongoose.Schema({
